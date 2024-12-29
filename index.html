@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8">
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website">
+    <!-- Author Metadata -->
+    <meta name="author" content="aechlaenm">
+    <!-- Webpage Logo -->
+    <link rel="shortcut icon" href="./assets/icons/643d5db723770edea470724f2b7a7598.ico">
+    <!-- Webpage Title -->
+    <title>Aechlaenm's Portfolio</title>
+    <!-- Import CSS: Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div id="particles-js">
+        <div class="header">
+            <h1>
+              <span class="site-title">Aechlaenm's Portfolio</span>
+              <span class="site-description">Programmer</span>
+            </h1>
+            <div class="header-icons">
+                <a aria-label="My Discord Profile" target="_blank" href="https://discordapp.com/users/788427781825888277">
+                  <img src="./assets/icons/discord-icon-2048x1570-y371emu6.png" alt="Discord Icon" style="width: 64px; height: 48px;">
+                </a>                
+            </div>
+            <div class="header-links">
+                <a class="link" href="#about" data-scroll>About Me</a>
+                <a class="link" href="#projects" data-scroll>Resume</a>
+            </div>
+            
+            <script>
+              window.addEventListener('wheel', function(event) {
+                  if (event.ctrlKey === true) {
+                      event.preventDefault();
+                  }
+              }, { passive: false });
+          </script>
+        </div>
+        <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <!-- User Introduction-->
+        <div class="user-details">
+          <h1>Background</h1>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/icons/643d5db723770edea470724f2b7a7598.ico"
+              alt="Aechlaenm"
+              width="20%"
+              style="border-radius: 50%"
+            />
+            <img
+              src="./assets/icons/643d5db723770edea470724f2b7a7598.ico"
+              alt="Aechlaenm"
+              width="20%"
+              style="border-radius: 50%"
+            />
+          </picture>
+          <p>
+            Greetings! I am Aechlaenm, an experienced Roblox developer, particularly in general scripting and UI scripting. If you have any projects in mind, I am available for commissions and eager to bring your ideas to life. With over three years of experience in Lua and Roblox Studio, I'm well-equipped to tackle a wide range of challenges. Do not hesitate in reaching out – I look forward to collaborate with you! Thank you for considering my services.
+        </p>
+        </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="user-details">
+            <h1>Resume</h1>
+        </div>
+
+      <!-- User Project #1: Tank track physics simulation -->
+      <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <video controls width="100%">
+              <source src="assets/videos/video/Tank track physics simulation.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>            
+        </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Tank track physics simulation</h3>
+          <p style="text-align: justify">
+            A tank track physics Itself will react to the terrain by using a spring which makes it handle the suspension depending on the terrain.
+          </p>
+          <a class="project-link" target="_blank" href="https://youtu.be/9nf4VLkuGvQ"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+      <!-- User Project #2: Dialogue System -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <video controls width="100%">
+              <source src="assets/videos/video/Dialogue.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>            
+        </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Dialogue System</h3>
+          <p style="text-align: justify">
+            The dialogue itself is pretty much easily customizable It used moduleScript to handle the dialogue between each NPC.
+          </p>
+          <a class="project-link" target="_blank" href="https://www.youtube.com/watch?v=nKT5fKI42TQ"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+      <!-- User Project #3: Perlin Noises Generation -->
+      <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <video controls width="100%">
+              <source src="assets/videos/video/Perlin Noises.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>            
+        </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Perlin Noises Generation</h3>
+          <p style="text-align: justify">
+            A Minecraft inspired terrain generation made using Perlin noises.
+          </p>
+          <a class="project-link" target="_blank" href="https://www.youtube.com/watch?v=-b_BHVEDEkU"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+      <!-- User Project #4: Basic Melee System -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <video controls width="100%">
+              <source src="assets/videos/video/Basic Combat System.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>            
+        </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Basic Melee System</h3>
+          <p style="text-align: justify">
+            A basic melee system with LMB (Left Mouse Button) for punching. It has 4 combos; the 4th combo would knock back the enemy. RMB (Right Mouse Button) executes a heavy hit which deals more damage than LMB and knocks back the enemy.
+          </p>
+          <a class="project-link" target="_blank" href="https://www.youtube.com/watch?v=etHcPhZxFFo"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+       <!-- User Project #5: Placement System -->
+       <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <video controls width="100%">
+              <source src="assets/videos/video/Placement.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>            
+        </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Placement System</h3>
+          <p style="text-align: justify">
+            A placement system including Placement, Snapping, Deletion, and Rotation. Select an object to place, which comes with collision detection and snapping features for bookshelves and tables (Books/Dishes). By pressing Backspace and aiming at an object, you can remove the placed object.
+          </p>
+          <a class="project-link" target="_blank" href="https://www.youtube.com/watch?v=DyyrLm8EQJ4"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+      <!-- User Project #6: Night Vision System -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <video controls width="100%">
+              <source src="assets/videos/video/NightVision.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>            
+        </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Night Vision System</h3>
+          <p style="text-align: justify">
+            A night vision system that enhances visibility in low-light conditions using infrared technology, providing clear images in complete darkness.
+          </p>
+          <a class="project-link" target="_blank" href="https://www.youtube.com/watch?v=-kLB7H9VsO8"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+       <!-- User Project #7: Advanced Tank System -->
+       <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <video controls width="100%">
+              <source src="assets/videos/video/TankSystem.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>            
+        </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Advance Tank System</h3>
+          <p style="text-align: justify">
+            Advance Tank System with a 3D Track using pure 300+ lines math formula for the Track itself. The track is dynamically generated between length of wheel.
+          </p>
+          <a class="project-link" target="_blank" href="https://www.youtube.com/watch?v=SICBrIpJSFY"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    </section>
+  </section>
+
+
+    <footer class="footer">
+      <p>&copy; aechlaenm, 2024</p>
+    </footer>
+    
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
