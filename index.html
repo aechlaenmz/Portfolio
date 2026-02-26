@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" id="favicon" type="image/png" href="/Portfolio/vite.svg" />
+    <script>
+      (function () {
+        var img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = function () {
+          var c = document.createElement('canvas');
+          c.width = c.height = 64;
+          var ctx = c.getContext('2d');
+          ctx.beginPath();
+          ctx.arc(32, 32, 32, 0, Math.PI * 2);
+          ctx.clip();
+          ctx.drawImage(img, 0, 0, 64, 64);
+          document.getElementById('favicon').href = c.toDataURL('image/png');
+        };
+        img.src = 'https://cdn.discordapp.com/avatars/788427781825888277/f92aabc1f9b5955132c6d94d4b323036.webp?size=128';
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aechlaenm — Roblox Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/Portfolio/assets/index-BRgEgiMd.js"></script>
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DW4zoNTc.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
