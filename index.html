@@ -2,7 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" id="favicon" type="image/png" href="/vite.svg" />
+    <script>
+      (function () {
+        var img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = function () {
+          var c = document.createElement('canvas');
+          c.width = c.height = 64;
+          var ctx = c.getContext('2d');
+          ctx.beginPath();
+          ctx.arc(32, 32, 32, 0, Math.PI * 2);
+          ctx.clip();
+          ctx.drawImage(img, 0, 0, 64, 64);
+          document.getElementById('favicon').href = c.toDataURL('image/png');
+        };
+        img.src = 'https://cdn.discordapp.com/avatars/788427781825888277/f92aabc1f9b5955132c6d94d4b323036.webp?size=128';
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aechlaenm — Roblox Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
